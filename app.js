@@ -51,13 +51,13 @@
 // obj.display("vasanth is a gud boy");
 // console.log(obj.add(10, 20));
 
-const display = require("./logger");
+// const display = require("./logger");
 // console.log("app", global);
 // const { add, sub } = require("./logger");
 
 // console.log(global.exports);
 
-global.display("vasanth is a gud boy");
+// global.display("vasanth is a gud boy");
 // console.log(add(10, 20));
 
 // console.log(module.exports);
