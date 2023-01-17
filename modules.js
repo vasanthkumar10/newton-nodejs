@@ -44,22 +44,52 @@
 // });
 
 // Events
-const EventEmitter = require("events");
-const emitter = new EventEmitter();
+// const EventEmitter = require("events");
+// const emitter = new EventEmitter();
 
-// register the listener
-emitter.on("logging", () => {
-  console.log("event triggered");
-});
+// // register the listener
+// emitter.on("logging", () => {
+//   console.log("event triggered");
+// });
 
-emitter.on("click", (arg) => {
-  console.log("click triggered", arg);
-});
+// emitter.on("click", (arg) => {
+//   console.log("click triggered", arg);
+// });
 
-// raise event
-emitter.emit("logging");
-emitter.emit("logging");
+// // raise event
+// emitter.emit("logging");
+// emitter.emit("logging");
 // emitter.emit("click", {
 //   name: "sachin",
 //   role: "opener",
 // });
+
+// CREATE SERVER
+// const http = require("http");
+
+// const server = http.createServer((req, res) => {
+//   // routes
+//   if (req.url === "/") {
+//     res.write("Welcome to Newton school");
+//     res.end();
+//   }
+
+//   if (req.url === "/courses") {
+//     res.write("MERN stack course");
+//     res.end();
+//   }
+
+//   if (req.url === "/api/bikes") {
+//     res.write(JSON.stringify(["yamaha", "honda", "duke"]));
+//     res.end();
+//   }
+// });
+
+// // listener
+// server.on("connection", () => {
+//   console.log("new connection triggered");
+// });
+
+// trigger
+// server.listen(5000);
+// console.log("Listening to the port 5000....");
